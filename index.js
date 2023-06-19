@@ -1,3 +1,5 @@
+
+ 
  function getComputerChoice () {
     const computerPick = ['rock', 'paper', 'scissors'];
         return computerPick[Math.floor(Math.random() * computerPick.length)];
@@ -16,9 +18,10 @@
         return `YOU LOST! ${computerSelection} BEATS ${playerSelection}`;
     }
   }
-   
+
+
+  for (let i = 0; i < 5; i++) {
   const playerSelection = prompt('Choose your weapon: "rock", "paper", or "scissors".').toLowerCase();
   const computerSelection = getComputerChoice();
   console.log(playRound(playerSelection, computerSelection));
-
-
+  }
